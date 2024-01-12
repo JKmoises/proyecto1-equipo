@@ -1,8 +1,137 @@
 /* ********** Custom Properties ********** */
-
+:root {
+	--pink-light: #fbf2f7;
+	--pink-normal: #f9e6f1;
+	--pink-dark: #f9e6f1;
+	--gray-light: #f3f3f5;
+	--gray-dark: #757575;
+	--light-purple: #e5e6f3;
+	--purple-dark: #573146;
+	--light-blue: #dcf3ed;
+	--normal-blue: #98c5d6;
+	--font: 'Raleway', sans-serif;
+	--max-width: 1200px;
+}
 
 /* ********** Reset ********** */
+html {
+	box-sizing: border-box;
+	font-family: var(--font);
+	font-size: 16px;
+}
 
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+h1 {
+	margin: 0;
+	font-size: 2rem;
+}
+
+h2 {
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+h3 {
+	margin: 0;
+	font-size: 1.25rem;
+}
+
+h4 {
+	margin: 0;
+	font-size: 1rem;
+}
+
+h5 {
+	margin: 0;
+	font-size: 0.85rem;
+}
+
+h6 {
+	margin: 0;
+	font-size: 0.7rem;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+p {
+	margin: 0;
+	line-height: 1.6;
+}
+
+/* ********** Utilities ********** */
+
+.box-shadow-1 {
+	box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.section {
+	padding: 2rem 1rem;
+}
+
+.flex-col-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: var(--max-width);
+}
+
+.none {
+	display: none;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+	.full-lg-screen {
+		width: 100%;
+		min-height: 100vh;
+	}
+
+	.text-lg-center {
+		text-align: center;
+	}
+
+	.text-lg-left {
+		text-align: left;
+	}
+
+	.text-lg-right {
+		text-align: right;
+	}
+}
 
 /* ********** Components ********** */
 
@@ -10,16 +139,80 @@
 
 /* TODO: Footer */
 
+/* TODO: Navbar */
 
-
-/* ********** Utilities ********** */
-
+/* TODO: Modal */
 
 /* ********** Site Styles ********** */
 
 /* TODO: Pagina de inicio */
 
 /* TODO: Pagina de tienda */
+
+.main {
+	padding: 2rem;
+	background-color: var(--gray-light);
+	min-height: 100vh;
+}
+
+.title {
+	font-weight: 300;
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.products {
+	width: 100%;
+	display: grid;
+	gap: 1rem;
+	place-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.products__card {
+	gap: 1rem;
+	position: relative;
+}
+
+.card__category {
+	position: absolute;
+	left: 0;
+	color: white;
+	padding: 0.2rem 1rem;
+	background-color: var(--purple-dark);
+}
+
+.card__info {
+	width: 100%;
+}
+
+.info__name {
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+.info__price {
+	font-weight: 400;
+	font-size: 1.3rem;
+}
+
+.info__btn {
+	width: 100%;
+	height: 3rem;
+	color: white;
+	border: none;
+	font-size: 1rem;
+	cursor: pointer;
+	font-weight: 300;
+	margin-top: 1rem;
+	display: inline-block;
+	transition: all 0.3s ease-in-out;
+	background-color: var(--purple-dark);
+}
+
+.info__btn:hover {
+	filter: brightness(200%);
+}
 
 /* TODO: Pagina de sobre mí */
 
