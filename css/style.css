@@ -7,6 +7,7 @@
 	--gray-dark: #757575;
 	--light-purple: #e5e6f3;
 	--purple-dark: #573146;
+	--purple-light: #AE628C;
 	--light-blue: #dcf3ed;
 	--normal-blue: #98c5d6;
 	--font: 'Raleway', sans-serif;
@@ -64,7 +65,6 @@ h6 {
 img {
 	max-width: 100%;
 	height: auto;
-	display: block;
 }
 
 p {
@@ -211,7 +211,7 @@ p {
 }
 
 .info__btn:hover {
-	filter: brightness(200%);
+	background-color: var(--purple-light);
 }
 
 /* TODO: Pagina de sobre mí */
