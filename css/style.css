@@ -1,16 +1,129 @@
 /* ********** Custom Properties ********** */
-/* --pink-light: #FBF2F7; */
-/* --pink-normal: #F9E6F1; */
-/* --pink-dark: #F9E6F1; */
-/* --gray-light: #F3F3F5; */
-/* --gray-dark: #757575; */
-/* --light-purple: #E5E6F3; */
-/* --purple-dark: #573146; */
-/* --light-blue: #DCF3ED; */
-/* --normal-blue: #98C5D6; */
+:root{
+  --pink-light: #FBF2F7;
+  --pink-normal: #F9E6F1;
+  --pink-dark: #F9E6F1;
+  --gray-light: #F3F3F5;
+  --gray-dark: #757575;
+  --light-purple: #E5E6F3;
+  --purple-dark: #573146;
+  --light-blue: #DCF3ED;
+  --normal-blue: #98C5D6;
+  --font: 'Raleway', sans-serif;
+  --max-width: 1200px;
+}
 
 /* ********** Reset ********** */
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+}
 
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ********** Utilities ********** */
+
+.box-shadow-1 {
+  box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.section {
+  padding: 2rem 1rem;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width);
+}
+
+.none {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .full-lg-screen {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .text-lg-center {
+    text-align: center;
+  }
+
+  .text-lg-left {
+    text-align: left;
+  }
+
+  .text-lg-right {
+    text-align: right;
+  }
+
+}
 
 /* ********** Utilities ********** */
 
@@ -20,6 +133,11 @@
 
 /* TODO: Footer */
 
+<<<<<<< HEAD
+=======
+/* TODO: Navbar */
+
+>>>>>>> main
 /* TODO: Modal */
 
 
