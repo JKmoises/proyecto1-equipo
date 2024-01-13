@@ -1,16 +1,18 @@
 /* ********** Custom Properties ********** */
-:root{
-  --pink-light: #FBF2F7;
-  --pink-normal: #F9E6F1;
-  --pink-dark: #F9E6F1;
-  --gray-light: #F3F3F5;
-  --gray-dark: #757575;
-  --light-purple: #E5E6F3;
-  --purple-dark: #573146;
-  --light-blue: #DCF3ED;
-  --normal-blue: #98C5D6;
-  --font: 'Raleway', sans-serif;
-  --max-width: 1200px;
+
+:root {
+	--pink-light: #fbf2f7;
+	--pink-normal: #f9e6f1;
+	--pink-dark: #f9e6f1;
+	--gray-light: #f3f3f5;
+	--gray-dark: #757575;
+	--light-purple: #e5e6f3;
+	--purple-dark: #573146;
+	--purple-light: #AE628C;
+	--light-blue: #dcf3ed;
+	--normal-blue: #98c5d6;
+	--font: 'Raleway', sans-serif;
+	--max-width: 1200px;
 }
 
 /* ********** Reset ********** */
@@ -103,6 +105,16 @@ p {
   text-align: right;
 }
 
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 
 
 @media screen and (min-width: 768px) {
@@ -144,6 +156,132 @@ p {
 /* TODO: Pagina de inicio */
 
 /* TODO: Pagina de tienda */
+
+.main {
+	padding: 2rem;
+	background-color: var(--gray-light);
+	min-height: 100vh;
+}
+
+.title {
+	font-weight: 300;
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.products {
+	width: 100%;
+	display: grid;
+	gap: 1rem;
+	place-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.products__card {
+	gap: 1rem;
+	position: relative;
+  cursor: pointer;
+  transition: all 2s ease-in;
+}
+
+.card__category {
+	position: absolute;
+	left: 0;
+	color: white;
+	padding: 0.2rem 1rem;
+	background-color: var(--purple-dark);
+}
+
+.card__info {
+	width: 100%;
+}
+
+.info__name {
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+.info__price {
+	font-weight: 400;
+	font-size: 1.3rem;
+}
+
+.info__btn {
+	width: 100%;
+	height: 3rem;
+	color: white;
+	border: none;
+	font-size: 1rem;
+	cursor: pointer;
+	font-weight: 300;
+	margin-top: 1rem;
+	display: inline-block;
+	transition: all 0.3s ease-in-out;
+	background-color: var(--purple-dark);
+}
+
+.info__btn:hover {
+	background-color: var(--purple-light);
+}
+
+.card-img-hover {
+  display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+  
+  .main {
+    padding: 7rem 8rem;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .contenedor-img {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card__img {
+    display: block;
+  }
+
+  .products__card:hover .card__img {
+    display: none;
+  }
+
+  .products__card:hover .card-img-hover {
+    display: block;
+  }
+
+  .card__modal {
+    width: 100%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    color: #000;
+    transform: translateY(50px);
+    transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .products__card:hover .card__modal {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .products__card {
+    transition: transform 0.3s ease;
+  }
+}
 
 /* TODO: Pagina de sobre mí */
 
