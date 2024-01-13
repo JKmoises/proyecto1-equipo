@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header class="header">
     <section class="header__nav">
@@ -24,28 +26,27 @@
           Delicias Dafna
         </a>
       </div>
-  
+
       <div class="header__hamgurger-icon icon">
         <i class="bi bi-list"></i>
       </div>
     </section>
-  
+
     <section class="header__search">
       <input type="text" placeholder="Buscar...">
-  
       <div class="header__search-icon icon">
         <i class="bi bi-search"></i>
       </div>
     </section>
   </header>
 
-
+  <!--! Modificación del codigo. Leer el codigo NUEVO -->
   <main>
-    <section> 
+    <section class="contacto">
       <article>
-        <article>
-          <h1 class="fluidH1">/ENVÍAME TUS PREGUNTAS</h1>
-          <p class="estiloParrafoInicial">
+        <article> 
+          <h1 class="contacto__title">/ENVÍAME TUS PREGUNTAS</h1>
+          <p class="contacto__text">
             Párrafo. Haz clic para editar y agregar tu propio texto. Es fácil.
             Haz clic en "Editar Texto" o doble clic aquí para agregar tu
             contenido y cambiar la fuente. Puedes arrastrar y soltar este texto
@@ -53,42 +54,54 @@
           </p>
         </article>
         <article>
-          <form action="" class="estilosForm">
-            <label for=""></label>
-            <input class="styleInputContact" type="text" placeholder="Nombre">
-            <input class="styleInputContact" type="email"  placeholder="Nombre"/>
-            <textarea class="styleInputContact">Mensaje</textarea>
-            <button class="buttonSubmit">Enviar</button>
-            <!-- <input type="submit" value=""> -->
+          <form action="#" class="form">
+            <div>
+              <label for="Nombre">Nombre</label>
+              <input class="form__input" type="text" placeholder="Nombre">
+            </div>
+            <div>
+              <label for="Correo">Correo</label>
+              <input class="form__input" type="email" placeholder="Correo" />
+            </div>
+            <div>
+              <label for="Mensaje">Mensaje</label>
+              <textarea class="form__input">Mensaje</textarea>
+            </div>
+            <div>
+              <button class="form__btn">Enviar</button>
+            </div>
           </form>
         </article>
       </article>
       <article>
-        <p class="parrafPadding">CONTACTO</p>
-        <ul class="resetPaddingnUl">
-          <li>Tel: <a href="" target="_blank">914-123-456</a></li>
-          <li>Email: <a href="">info@misitio.com</a></li>
-        </ul>
-        <p class="parrafPadding">HORARIO</p>
-        <ul  class="resetPaddingnUl">
-          <li>Lun - Vie: 7:00 - 22:00</li>
-          <li>Sábado: 8:00 - 22:00</li>
-          <li>Domingo: 7:00 - 35:00</li>
-        </ul>
-        <p class="parrafPadding">DIRECCIÓN</p>
-        <ul  class="resetPaddingnUl">
-          <li>Av. Los Rosales 122</li>
-          <li>28021, Madrid</li>
-          <!-- <li>
-            Párrafo. Haz clic para editar y agregar tu propio texto. Es fácil.
-            Haz clic en "Editar Texto" o doble clic aquí para agregar tu
-            contenido y cambiar la fuente. Puedes arrastrar y soltar este
-            texto donde quieras en tu página.
-          </li> -->
-        </ul>
+          <article class="info">
+            <h2 class="info__title">CONTACTO</h2>
+            <ul class="info__lista">
+              <li>Tel: <a href="" target="_blank">914-123-456</a></li>
+              <li>Email: <a href="">info@misitio.com</a></li>
+            </ul>
+          </article>
+          <article>
+            <h2 class="info__title">HORARIO</h2>
+            <ul class="info__lista">
+              <li>Lun - Vie: 7:00 - 22:00</li>
+              <li>Sábado: 8:00 - 22:00</li>
+              <li>Domingo: 7:00 - 35:00</li>
+            </ul>
+          </article>
+          <article>
+            <h2 class="info__title">DIRECCIÓN</h2>
+            <ul class="info__lista">
+              <li>Av. Los Rosales 122</li>
+              <li>28021, Madrid</li>
+            </ul>
+          </article>
       </article>
     </section>
+    <section>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6083.118135503093!2d-3.6614027!3d40.3299424!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1705167236222!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
   </main>
-  
 </body>
+
 </html>
