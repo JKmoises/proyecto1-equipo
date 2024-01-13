@@ -93,7 +93,7 @@ p {
 }
 
 .icon{
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: var(--normal-black);
   cursor: pointer;
 }
@@ -143,7 +143,6 @@ p {
   .text-lg-right {
     text-align: right;
   }
-
 }
 
 /* ********** Utilities ********** */
@@ -151,27 +150,29 @@ p {
 /* ********** Components ********** */
 
 /* TODO: Header */
-.header{
+.header__main{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   padding: 1rem;
 }
 
-.header__nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.header__title-container{
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+.header__cart-icon{
+  width: 12%;
 }
-
 
 .header__title{
   font-size: 1.5rem;
   color: var(--dark-black);
   text-decoration: none;
+  width: 80%;
+}
+
+.header__hamgurger-icon{
+  display: flex;
+  justify-content: flex-end;
+  width: 8%;
 }
 
 .header__search{
@@ -179,6 +180,8 @@ p {
   display: flex;
   align-items: center;
   margin-top: 1rem;
+  width: 100%;
+  background-color: var(--normal-white);
 
 }
 
@@ -202,14 +205,140 @@ p {
 .header__search-icon{
   font-size: 1rem;
   color: var(--dark-black);
+  margin-right: .3rem;
   cursor: pointer;
+}
 
+.header__login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__login.none{
+  display: none;
+}
+
+.header__nav{
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 1rem 0 5rem;
+  background-color: var(--normal-white);
+  min-height: 100vh;
+  visibility: hidden;
+}
+
+.header__nav a {
+  color: var(--normal-black);
+  font-size: .9rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  transition: color .3s ease-in-out;
+}
+
+.header__close-icon{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--dark-black);
+  cursor: pointer;
+}
+
+.header__nav-main{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 
-@media screen and (min-width: 768px) {
+
+
+@media screen and (min-width: 576px) {  
+  .header__main {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--pink-light);
+  }
+
+  .header__cart-icon {
+    width: auto;
+    order: 1;
+  }
+
+  .header__title {
+    width: 40%;
+  }
+
+  .header__hamgurger-icon {
+    display: none;
+  }
+
+  .header__search {
+    flex-direction: row-reverse;
+    width: auto;
+    margin: 0;
+  }
+
+  .header__search-icon {
+    margin: 0;
+    margin-left: .3rem;
+  }
+
+  .header__nav {
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 0 1rem;
+    min-height: initial;
+    visibility: visible;
+  }
+
+
+  .header__login {
+    display: none;
+  }
+
+  .header__login.none {
+    display: flex;
+  }
+
+  .header__login>p:hover {
+    color: var(--gray-dark);
+    cursor: pointer;
+  }
+
+  .header__close-icon {
+    display: none;
+  }
+
+  .header__nav-main {
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .header__nav-main > a:hover{
+    color: var(--pink-dark);
+  }
   
+  .header__nav-social-media{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
 }
+
+
 
 
 /* TODO: Footer */
