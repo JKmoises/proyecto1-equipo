@@ -46,6 +46,15 @@ ___
 
 - Usar atajos de teclado de _VSC_ para manejar el código más rápido(como clonar líneas de código, seleccionar múltiples líneas de código, comentar y descomentar código, etc).
 
+  #### **Atajos d teclado VSC:** 
+  - [Atajos windows](./assets/tips/keyboard-shortcuts-windows.pdf)
+
+- Recomendable usar la métodología BEM (Block Element Modifier) para definir clases en HTML y así tener un código más escalable y fácil de leer.
+
+  #### **Ejemplo de BEM:**
+  - ![Infografía BEM](https://sourcedcode.com/storage/2022/01/bem-simple-example.1.png)
+
+
 ___
 
 ## Infografías útiles para el aprendizaje:

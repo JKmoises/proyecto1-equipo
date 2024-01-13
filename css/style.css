@@ -2,7 +2,7 @@
 :root{
   --pink-light: #FBF2F7;
   --pink-normal: #F9E6F1;
-  --pink-dark: #F9E6F1;
+  --pink-dark: #F6D9E9;
   --gray-light: #F3F3F5;
   --gray-normal: #DCDCDC;
   --gray-dark: #757575;
@@ -225,13 +225,17 @@ p {
 .footer__section-container {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 
 .footer__section{
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-bottom: 1.5rem;
+}
+
+.footer__section:last-child{
+  margin-bottom: 1rem;
 }
 
 .footer__section > h4{
@@ -293,6 +297,7 @@ p {
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 300;
+  transition: color .3s ease-in-out;
 }
 
 .footer__info-container{
@@ -311,9 +316,6 @@ p {
   font-size: 1.1rem;
 }
 
-.footer__info{
-
-}
 
 .footer__info a{
   text-decoration: underline;
@@ -321,6 +323,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .footer{
+    gap: 3rem;
     padding: 5rem;
   }
 
@@ -331,12 +334,24 @@ p {
 
   .footer__newsletter {
     margin: 0;
-    order: -1;
+    order: 1;
+  }
+
+  .footer__form>button:hover{
+    color: var(--normal-white);  
   }
 
   .footer__info-container{
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+
+  .footer__social-media{
+    gap: 3rem;
+  }
+
+  .social-media__icon{
+    font-size: 1.3rem;
   }
 }
 
