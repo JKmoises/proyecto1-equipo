@@ -607,7 +607,6 @@ li {
 
 	.products__card:hover .card-img-hover {
 		display: block;
-		background-color: aqua;
 	}
 
 	.products__card:hover .card__modal {
