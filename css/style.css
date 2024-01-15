@@ -1013,7 +1013,6 @@ li {
     font-size: 5.6vw;
     margin: .6rem 1rem;
     font-weight: 300;
-    
 }
 li {
   list-style: none;
@@ -1023,8 +1022,8 @@ a {
   color: inherit;
 }
 .info__lista{
-    
     padding-inline-start: 23px;
+    font-weight: 600;
 }
 .contacto__text{
     margin: 1.5rem;
@@ -1057,11 +1056,35 @@ a {
 .info__title{
     margin: .6rem 1rem;
     padding: .5rem;
+    font-weight: 100;
+}
+.map{
+  display: none;
 }
 /* *Lapto */
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 768px){
+  .contacto__title{
+    font-size:1.75rem
+  }
+  .contacto__text{
+    font-size: 1rem;
+    width: 60vw;
+  }
+
+  .info__title{
+    font-size: .8125rem;
+  }
   .contacto{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  
+  .map{
+    display: block;
+    margin: 2rem;
+  } 
+  .map iframe{
+    width: 70vw;
+    height: 40vh;
+  } 
 }
