@@ -12,7 +12,7 @@
   <!-- Bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- Estilos CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -76,8 +76,8 @@
   </header>
 
   <!--! Modificación del codigo. Leer el codigo NUEVO -->
-  <main>
-    <section class="contacto container">
+  <main class="container">
+    <section class="contacto ">
       <article>
         <article> 
           <h1 class="contacto__title">/ENVÍAME TUS PREGUNTAS</h1>
@@ -90,24 +90,36 @@
         </article>
         <article>
           <form action="#" class="form">
-            <div>
-              <label for="Nombre">Nombre</label>
-              <input class="form__input" type="text" placeholder="Nombre">
-            </div>
-            <div>
-              <label for="Correo">Correo</label>
-              <input class="form__input" type="email" placeholder="Correo" />
-            </div>
-            <div>
-              <label for="Mensaje">Mensaje</label>
-              <textarea class="form__input">Mensaje</textarea>
-            </div>
-            <div>
-              <button class="form__btn">Enviar</button>
-            </div>
+            <section class="form__section--div--grid">
+
+              <div class="form__div--grid-order-nombre">
+                <!-- <label for="Nombre">Nombre</label><br> -->
+                <input class="form__input form__section--input--nombre" type="text" placeholder="Nombre">
+              </div>
+              
+              <div class="form__div--grid-order-correo">
+                <!-- <label for="Correo">Correo</label><br> -->
+                <input class="form__input form__section--input--correo" type="email" placeholder="Correo" />
+              </div>
+              
+              
+              <div class="form__div--grid-order-mensaje">
+                <!-- <label for="Mensaje">Mensaje</label><br> -->
+                <textarea class="form__input form__section--input--mensaje" placeholder="Mensaje"></textarea>
+              </div>
+              
+              <div class="form__div--grid-order-enviar">
+                <button class="form__btn form__section--input--enviar">Enviar</button>
+              </div>
+            </section>
           </form>
         </article>
       </article>
+
+
+
+
+      
       <article>
           <article class="info">
             <h2 class="info__title">CONTACTO</h2>
@@ -126,7 +138,7 @@
           </article>
           <article>
             <h2 class="info__title">DIRECCIÓN</h2>
-            <ul class="info__lista">
+            <ul class="info__lista info__lista--paddingbottom">
               <li>Av. Los Rosales 122</li>
               <li>28021, Madrid</li>
             </ul>
