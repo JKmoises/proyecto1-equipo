@@ -1035,14 +1035,36 @@ a {
     font-size: 1.2rem;
     padding: .5rem;
 }
+.form{
+  
+  margin: 0 1rem;
+  
+}
+.form__section--input--nombre,
+.form__section--input--correo {
+    /* margin: 0 1rem; */
+    width: 100%;
+    line-height: 47px;
+  }
+  .form__section--input--mensaje{
+    width: 100%;
+    line-height: 9vh;
+    resize: none;
+  }
+  .form__section--input--mensaje::placeholder{
+    padding: .5rem;
+    line-height: 1rem;
+  }
 
-.form__btn{
+  
+  .form__btn{
     line-height: 2.6rem;
-    margin: .6rem 1rem;
+    margin: .6rem 0;
     background-color: rgba(241, 214, 227, 0.756);
     border: none;
     font-size: 1.3rem;
     cursor: pointer;
+    width: 100%;
 }
 .form__btn:hover{
     background-color: rgba(237, 189, 212, 0.987);
@@ -1053,15 +1075,79 @@ a {
     transition: .2s all;
 
 }
-
+.info__lista--paddingbottom{
+  padding-bottom: 3rem;
+}
 .info__title{
     margin: .6rem 1rem;
     padding: .5rem;
 }
 /* *Lapto */
-@media screen and (min-width: 1280px){
+.form__section--div--grid >*{
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px){
+  .info__lista--paddingbottom{
+    padding-bottom:0;
+  }
+  .form__section--input--mensaje{
+    width: 100%;
+    line-height: 4vh;
+    resize: none;
+  }
   .contacto{
     display: flex;
   }
+  .contacto__title{
+    font-size:1.6rem ;
+  }
+  .form__section--div--grid{
+    display: grid;
+    grid-template-columns: repeat(2, 30%);
+    grid-template-rows: repeat(3, 5vh);
+    grid-auto-rows: auto;
+    width: 81%;
+    margin: 0 auto;
+    gap: 1rem;
+    
+  }
+  .form__div--grid-order-nombre{
+    /* display: flex; */
+  }
+  .form__div--grid-order-correo{
+    
+    order: 1;
+    /* display: flex; */
+  }
   
+  .form__div--grid-order-mensaje{
+    order: 0;
+    display: grid;
+    grid-auto-rows: 118px;
+   
+  }
+   /* .form__section--input--mensaje::placeholder{
+
+   } */
+  .form__div--grid-order-enviar{
+    order: 1;
+    grid-row: -2 / -1;
+    grid-column: 2/3;
+  }
+
+  .form__section--input--nombre{
+    
+  }
+  .form .form__section--input--correo{
+
+    /* display: grid;
+    order: 3 ; */
+  }
+  .form .form__section--input--mensaje{
+    /* display: grid;
+    order: 2 ; */
+  }
+  .form__section--input--enviar{
+
+  }
 }
