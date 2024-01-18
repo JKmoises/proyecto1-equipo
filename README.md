@@ -1,4 +1,4 @@
-# Proyecto 1 - HTML y CSS
+# Tienda de Galletas - HTML y CSS
 
 Proyecto en equipo para aprender **HTML**, **CSS**, **GIT** y **Responsive Web Design** usando un _Layout_ (diseño) de ejemplo.
 
