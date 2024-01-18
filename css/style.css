@@ -1145,3 +1145,37 @@ a {
     grid-column: 2/3;
   }
 }
+
+
+.fadeIn {
+  opacity: 1;
+  animation: fadeIn 0.2s linear;
+}
+
+.fadeOut  {
+  opacity: 0;
+  animation: fadeOut 0.5s linear;
+}
+
+@keyframes fadeIn {
+  0%{ 
+    opacity: 0;
+    margin-left: 100%;
+  }
+  100%{ 
+    opacity: 1;
+    margin-left: 0%;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    margin-left: 0%;
+  }
+
+  100% {
+    opacity: 0;
+    margin-left: 100%;
+  }
+}
