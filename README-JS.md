@@ -39,7 +39,8 @@ ___
 | `/app`                  | Contiene todos los archivos importantes de la aplicación.        
 | `/app/assets`           | Contiene todos los recursos estáticos como _imágenes_, _SVG_, _videos_, etc.      
 | `/app/components`       | Contiene todos los componentes _Javascript_ de la app.       
-| `/app/helpers`          | Contiene todas las _funciones reutilizables_ de ayuda en nuestra lógica y _constantes_ que se usan en la app(ej. formatear una fecha, formatear numero a peso de venta,funcion para peticiones http, etc).        
+| `/app/pages`       | Contiene todas las paginas de la app.       
+| `/app/helpers`          | Contiene todas las _funciones reutilizables_ de ayuda en nuestra lógica y _constantes_ que se usan en la app(ej. formatear una fecha, formatear numero a peso de venta,funcion para peticiones http, etc). Se recomienda los archivos helpers con la siguiente nomenclatura: `archivoHelper.js`. Por ejemplo puede ser `formatsHelper.js` 
 | `/app/functions`       | Contiene todas las funciones que tendran la logica de las funcionalidades de nuestra página(ej. logica del carrito, ,menu hamburguesa, etc).        
 | `/app/Router.js` | Maneja la lógica al cambiar el _hash_ de la url y carga la data de APIs, archivos persistentes, etc (En nuestro caso controla la carga de la pagina de incio, tienda,sobre mí, contacto, etc).       
 | `App.js`                | Se encarga de renderizar los _componentes_ de la app y tambien el _Router_.       
