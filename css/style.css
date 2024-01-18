@@ -1143,3 +1143,87 @@ a {
     grid-column: 2/3;
   }
 }
+
+/* SECCION DE DETALLES */
+.details-title-size{
+  font-size: 20px;
+  margin-bottom: 10px
+}
+
+.buy-datail-container{
+  margin-bottom: 30px
+}
+.sku {
+  font-weight: bold;
+  margin-bottom: 15px
+}
+.details-cant{
+  font-family: var(--font);
+  padding: 10px;
+  border: 1px solid var(--gray-normal)
+}
+
+.detail__price{
+  color: var(--gray-dark)
+}
+
+.carrito-color-btn{
+  background: var(--pink-dark);
+  color: var(--black-dark);
+}
+
+.carrito-color-btn:hover {
+  background: var(--pink-normal);
+  color: var(--black-light)
+}
+
+.detail-info__subtitle{
+  font-size: 16px;
+  color: var(--black-light);
+  font-weight: 500;
+  margin-bottom: 30px
+}
+
+.hr-details{
+  color: var(--black-dark);
+  font-size: 10px;
+
+}
+.datails-title{
+  padding-bottom: 3rem;
+}
+.span__color{
+  color: var(--gray-dark);
+}
+.details-img{
+  width: 250px;
+  height: 250px;
+  max-width: 250px;
+  max-height: 250px
+}
+.details-img-secondary{
+  width: 42px;
+  height: 42px;
+  max-width: 42px;
+  max-height: 42px;
+}
+@media screen and (min-width: 768px){
+  
+  .details-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: no-wrap
+  }
+  .details-img{
+    width: 500px;
+    height: 500px;
+    max-width: 500px;
+    max-height: 500px
+  }
+  
+  .contenedor-sec-img{
+    display: flex;
+    column-gap: 5px
+  }
+
+}
