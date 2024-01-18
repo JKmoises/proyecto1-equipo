@@ -10,7 +10,7 @@ Proyecto en equipo para aprender *JS* y profundizar sus conceptos.
 
 ___
 
-## Ruta de aprendizaje JS: [Jon mircha](aprendejavascript.org)
+## Ruta de aprendizaje JS:  [Ruta Jon mircha](https://aprendejavascript.org)
 
 ## Infografías útiles para el aprendizaje:
 
