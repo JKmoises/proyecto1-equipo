@@ -1083,46 +1083,52 @@ a {
     margin: .6rem 1rem;
     padding: .5rem;
     font-weight: 100;
+    font-size: 4.5vw;
+}
+.form__section--div--grid >{
+  margin-bottom: 1rem;
 }
 .map{
   display: none;
 }
 /* *Lapto */
-.form__section--div--grid >*{
-  margin-bottom: 1rem;
-}
 @media screen and (min-width: 768px){
-  .info__lista--paddingbottom{
-    padding-bottom:0;
+  .contacto__title{
+    font-size:1.75rem
   }
-  .form__section--input--mensaje{
-    width: 100%;
-    line-height: 4vh;
-    resize: none;
+  .contacto__text{
+    font-size: 1rem;
+    width: 60vw;
+  }
+
+  .info__title{
+    font-size: .8125rem;
   }
   .contacto{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .contacto__title{
-    font-size:1.6rem ;
-  }
+  .map{
+    display: block;
+    margin: 2rem;
+  } 
+  .map iframe{
+    width: 70vw;
+    height: 40vh;
+  } 
+  
   .form__section--div--grid{
     display: grid;
-    grid-template-columns: repeat(2, 30%);
+    grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(3, 5vh);
     grid-auto-rows: auto;
     width: 81%;
     margin: 0 auto;
-    gap: 1rem;
+    gap: 2rem;
     
-  }
-  .form__div--grid-order-nombre{
-    /* display: flex; */
   }
   .form__div--grid-order-correo{
-    
     order: 1;
     /* display: flex; */
   }
@@ -1131,30 +1137,11 @@ a {
     order: 0;
     display: grid;
     grid-auto-rows: 118px;
-   
   }
-   /* .form__section--input--mensaje::placeholder{
 
-   } */
   .form__div--grid-order-enviar{
     order: 1;
     grid-row: -2 / -1;
     grid-column: 2/3;
-  }
-
-  .form__section--input--nombre{
-    
-  }
-  .form .form__section--input--correo{
-
-    /* display: grid;
-    order: 3 ; */
-  }
-  .form .form__section--input--mensaje{
-    /* display: grid;
-    order: 2 ; */
-  }
-  .form__section--input--enviar{
-
   }
 }
