@@ -42,12 +42,12 @@ ___
 - Recomendable usar [Emmet](https://emmet.io/) que es un plugin que viene por defecto en _VSC_ para escribir código _HTML_ más rápido y ser más productivo.
 
   #### **Infografía con tips de _Emmet_:**
-  - ![Infografía Emmet](./assets/tips/emmet-atajos.png)
+  - ![Infografía Emmet](./tips/emmet-atajos.png)
 
 - Usar atajos de teclado de _VSC_ para manejar el código más rápido(como clonar líneas de código, seleccionar múltiples líneas de código, comentar y descomentar código, etc).
 
   #### **Atajos d teclado VSC:** 
-  - [Atajos windows](./assets/tips/keyboard-shortcuts-windows.pdf)
+  - [Atajos windows](./tips/keyboard-shortcuts-windows.pdf)
 
 - Recomendable usar la métodología BEM (Block Element Modifier) para definir clases en HTML y así tener un código más escalable y fácil de leer.
 
@@ -72,7 +72,7 @@ ___
 
   **Curso:** [Fundamentos HTML](https://youtu.be/-oK6zL01fNM?si=E7YGOCTfUEgceL35)
 
-![Ruta HTML](./assets/tips/HTML.png)
+![Ruta HTML](./tips/HTML.png)
 
 ___
 
@@ -101,36 +101,36 @@ ___
 
   **Curso:** [Responsive design y arquitectura CSS](https://youtu.be/udGrXWeJp1Y?si=CU8GmY6hdouU_YTl)
 
-![Ruta CSS](./assets/tips/CSS.jpg)
+![Ruta CSS](./tips/CSS.jpg)
 
 ___
 
 ### Pasos para crear el Frontend de una web:
 
-![Pasos Frontend](./assets/tips/pasos-dev-frontend.jpg)
+![Pasos Frontend](./tips/pasos-dev-frontend.jpg)
 
 ___
 
 ### ¿Que es Git?
 
-![Git](./assets/tips/definicion-git.png)
+![Git](./tips/definicion-git.png)
 
 ### Terminos de git que debes conocer:
 
-![Terminos Git](./assets/tips/terminos-git.jpg)
+![Terminos Git](./tips/terminos-git.jpg)
 
 ### Como trabajar en equipo con Git:
-![Trbajar en equipo con Git](./assets/tips/trabajar-equipo-git.png)
+![Trbajar en equipo con Git](./tips/trabajar-equipo-git.png)
 
 ### Comandos de git:
 
-![Comandos basicos 1](./assets/tips/comandos-git1.jpg)
-![Comandos basicos 2](./assets/tips/comandos-git2.jpg)
+![Comandos basicos 1](./tips/comandos-git1.jpg)
+![Comandos basicos 2](./tips/comandos-git2.jpg)
 
 ### Tip para mensajes de un commit:
 
-![Mensajes commit](./assets/tips/mensaje-commit-git.png)
+![Mensajes commit](./tips/mensaje-commit-git.png)
 
 ### Tip para ver historial de commits:
 
-![Tip para ver historial de commits](./assets/tips/tip-historial-commit.png)
+![Tip para ver historial de commits](./tips/tip-historial-commit.png)
