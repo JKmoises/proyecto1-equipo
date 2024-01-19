@@ -3,7 +3,7 @@
 		{
 			"id": 1,
 			"name": "chocolate blanco",
-			"price": 2.99,
+			"price": 4.99,
 			"category": "best sellers",
 			"image": [
 				"./app/assets/chocolate-blanco.webp",
