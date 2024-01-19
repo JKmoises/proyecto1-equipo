@@ -1,138 +1,134 @@
 {
-  "products":[
-    {
-      "id": 1,
-      "name": "Chocolate Chip",
-      "price": 2.99,
-      "category": "best sellers",
-      "image": [
-        "/app/assets/chocolate_chip_1.jpg",
-        "chocolate_chip_2.jpg",
-        "chocolate_chip_3.jpg"
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Oatmeal Raisin",
-      "price": 3.49,
-      "category": "best sellers",
-      "image": [
-        "oatmeal_raisin_1.jpg",
-        "oatmeal_raisin_2.jpg",
-        "oatmeal_raisin_3.jpg"
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Double Chocolate",
-      "price": 3.99,
-      "category": "best sellers",
-      "image": [
-        "double_chocolate_1.jpg",
-        "double_chocolate_2.jpg",
-        "double_chocolate_3.jpg"
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Snickerdoodle",
-      "price": 2.79,
-      "category": "best sellers",
-      "image": [
-        "snickerdoodle_1.jpg",
-        "snickerdoodle_2.jpg",
-        "snickerdoodle_3.jpg"
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Peanut Butter",
-      "price": 4.29,
-      "category": "best sellers",
-      "image": [
-        "peanut_butter_1.jpg",
-        "peanut_butter_2.jpg",
-        "peanut_butter_3.jpg"
-      ]
-    },
-    {
-      "id": 6,
-      "name": "White Chocolate Macadamia",
-      "price": 4.99,
-      "category": "best sellers",
-      "image": [
-        "white_chocolate_macadamia_1.jpg",
-        "white_chocolate_macadamia_2.jpg",
-        "white_chocolate_macadamia_3.jpg"
-      ]
-    },
-    {
-      "id": 7,
-      "name": "Caramel Delight",
-      "price": 3.79,
-      "category": "novelty",
-      "image": [
-        "caramel_delight_1.jpg",
-        "caramel_delight_2.jpg",
-        "caramel_delight_3.jpg"
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Red Velvet",
-      "price": 4.49,
-      "category": "novelty",
-      "image": ["red_velvet_1.jpg", "red_velvet_2.jpg", "red_velvet_3.jpg"]
-    },
-    {
-      "id": 9,
-      "name": "Lemon Blueberry",
-      "price": 5.29,
-      "category": "novelty",
-      "image": [
-        "lemon_blueberry_1.jpg",
-        "lemon_blueberry_2.jpg",
-        "lemon_blueberry_3.jpg"
-      ]
-    },
-    {
-      "id": 10,
-      "name": "Mint Chocolate Chip",
-      "price": 3.99,
-      "category": "novelty",
-      "image": [
-        "mint_chocolate_chip_1.jpg",
-        "mint_chocolate_chip_2.jpg",
-        "mint_chocolate_chip_3.jpg"
-      ]
-    },
-    {
-      "id": 11,
-      "name": "Salted Caramel",
-      "price": 4.79,
-      "category": "novelty",
-      "image": [
-        "salted_caramel_1.jpg",
-        "salted_caramel_2.jpg",
-        "salted_caramel_3.jpg"
-      ]
-    },
-    {
-      "id": 12,
-      "name": "Coconut Bliss",
-      "price": 5.99,
-      "category": "novelty",
-      "image": [
-        "coconut_bliss_1.jpg",
-        "coconut_bliss_2.jpg",
-        "coconut_bliss_3.jpg"
-      ]
-    }
-  ],
-  "cart":[
-
-  ],
-  "flavors":[
-
-  ]
+	"products": [
+		{
+			"id": 1,
+			"name": "Chocolate Chip",
+			"price": 2.99,
+			"category": "best sellers",
+			"image": [
+				"./assets/chocolate-blanco.webp",
+				"chocolate_chip_2.jpg",
+				"chocolate_chip_3.jpg"
+			]
+		},
+		{
+			"id": 2,
+			"name": "Oatmeal Raisin",
+			"price": 3.49,
+			"category": "best sellers",
+			"image": [
+				"oatmeal_raisin_1.jpg",
+				"oatmeal_raisin_2.jpg",
+				"oatmeal_raisin_3.jpg"
+			]
+		},
+		{
+			"id": 3,
+			"name": "Double Chocolate",
+			"price": 3.99,
+			"category": "best sellers",
+			"image": [
+				"double_chocolate_1.jpg",
+				"double_chocolate_2.jpg",
+				"double_chocolate_3.jpg"
+			]
+		},
+		{
+			"id": 4,
+			"name": "Snickerdoodle",
+			"price": 2.79,
+			"category": "best sellers",
+			"image": [
+				"snickerdoodle_1.jpg",
+				"snickerdoodle_2.jpg",
+				"snickerdoodle_3.jpg"
+			]
+		},
+		{
+			"id": 5,
+			"name": "Peanut Butter",
+			"price": 4.29,
+			"category": "best sellers",
+			"image": [
+				"peanut_butter_1.jpg",
+				"peanut_butter_2.jpg",
+				"peanut_butter_3.jpg"
+			]
+		},
+		{
+			"id": 6,
+			"name": "White Chocolate Macadamia",
+			"price": 4.99,
+			"category": "best sellers",
+			"image": [
+				"white_chocolate_macadamia_1.jpg",
+				"white_chocolate_macadamia_2.jpg",
+				"white_chocolate_macadamia_3.jpg"
+			]
+		},
+		{
+			"id": 7,
+			"name": "Caramel Delight",
+			"price": 3.79,
+			"category": "novelty",
+			"image": [
+				"caramel_delight_1.jpg",
+				"caramel_delight_2.jpg",
+				"caramel_delight_3.jpg"
+			]
+		},
+		{
+			"id": 8,
+			"name": "Red Velvet",
+			"price": 4.49,
+			"category": "novelty",
+			"image": ["red_velvet_1.jpg", "red_velvet_2.jpg", "red_velvet_3.jpg"]
+		},
+		{
+			"id": 9,
+			"name": "Lemon Blueberry",
+			"price": 5.29,
+			"category": "novelty",
+			"image": [
+				"lemon_blueberry_1.jpg",
+				"lemon_blueberry_2.jpg",
+				"lemon_blueberry_3.jpg"
+			]
+		},
+		{
+			"id": 10,
+			"name": "Mint Chocolate Chip",
+			"price": 3.99,
+			"category": "novelty",
+			"image": [
+				"mint_chocolate_chip_1.jpg",
+				"mint_chocolate_chip_2.jpg",
+				"mint_chocolate_chip_3.jpg"
+			]
+		},
+		{
+			"id": 11,
+			"name": "Salted Caramel",
+			"price": 4.79,
+			"category": "novelty",
+			"image": [
+				"salted_caramel_1.jpg",
+				"salted_caramel_2.jpg",
+				"salted_caramel_3.jpg"
+			]
+		},
+		{
+			"id": 12,
+			"name": "Coconut Bliss",
+			"price": 5.99,
+			"category": "novelty",
+			"image": [
+				"coconut_bliss_1.jpg",
+				"coconut_bliss_2.jpg",
+				"coconut_bliss_3.jpg"
+			]
+		}
+	],
+	"cart": [],
+	"flavors": []
 }
