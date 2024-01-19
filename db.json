@@ -1,135 +1,137 @@
 {
-  "products":[
-    {
-      "id": 1,
-      "name": "Chocolate Chip",
-      "price": 2.99,
-      "category": "best sellers",
-      "image": [
-        "/app/assets/chocolate_chip_1.jpg",
-        "chocolate_chip_2.jpg",
-        "chocolate_chip_3.jpg"
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Oatmeal Raisin",
-      "price": 3.49,
-      "category": "best sellers",
-      "image": [
-        "oatmeal_raisin_1.jpg",
-        "oatmeal_raisin_2.jpg",
-        "oatmeal_raisin_3.jpg"
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Double Chocolate",
-      "price": 3.99,
-      "category": "best sellers",
-      "image": [
-        "double_chocolate_1.jpg",
-        "double_chocolate_2.jpg",
-        "double_chocolate_3.jpg"
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Snickerdoodle",
-      "price": 2.79,
-      "category": "best sellers",
-      "image": [
-        "snickerdoodle_1.jpg",
-        "snickerdoodle_2.jpg",
-        "snickerdoodle_3.jpg"
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Peanut Butter",
-      "price": 4.29,
-      "category": "best sellers",
-      "image": [
-        "peanut_butter_1.jpg",
-        "peanut_butter_2.jpg",
-        "peanut_butter_3.jpg"
-      ]
-    },
-    {
-      "id": 6,
-      "name": "White Chocolate Macadamia",
-      "price": 4.99,
-      "category": "best sellers",
-      "image": [
-        "white_chocolate_macadamia_1.jpg",
-        "white_chocolate_macadamia_2.jpg",
-        "white_chocolate_macadamia_3.jpg"
-      ]
-    },
-    {
-      "id": 7,
-      "name": "Caramel Delight",
-      "price": 3.79,
-      "category": "novelty",
-      "image": [
-        "caramel_delight_1.jpg",
-        "caramel_delight_2.jpg",
-        "caramel_delight_3.jpg"
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Red Velvet",
-      "price": 4.49,
-      "category": "novelty",
-      "image": ["red_velvet_1.jpg", "red_velvet_2.jpg", "red_velvet_3.jpg"]
-    },
-    {
-      "id": 9,
-      "name": "Lemon Blueberry",
-      "price": 5.29,
-      "category": "novelty",
-      "image": [
-        "lemon_blueberry_1.jpg",
-        "lemon_blueberry_2.jpg",
-        "lemon_blueberry_3.jpg"
-      ]
-    },
-    {
-      "id": 10,
-      "name": "Mint Chocolate Chip",
-      "price": 3.99,
-      "category": "novelty",
-      "image": [
-        "mint_chocolate_chip_1.jpg",
-        "mint_chocolate_chip_2.jpg",
-        "mint_chocolate_chip_3.jpg"
-      ]
-    },
-    {
-      "id": 11,
-      "name": "Salted Caramel",
-      "price": 4.79,
-      "category": "novelty",
-      "image": [
-        "salted_caramel_1.jpg",
-        "salted_caramel_2.jpg",
-        "salted_caramel_3.jpg"
-      ]
-    },
-    {
-      "id": 12,
-      "name": "Coconut Bliss",
-      "price": 5.99,
-      "category": "novelty",
-      "image": [
-        "coconut_bliss_1.jpg",
-        "coconut_bliss_2.jpg",
-        "coconut_bliss_3.jpg"
-      ]
-    }
-  ],
-  "cart":[
-    
-  ]
+	"products": [
+		{
+			"id": 1,
+			"name": "chocolate blanco",
+			"price": 2.99,
+			"category": "best sellers",
+			"image": [
+				"./app/assets/chocolate-blanco.webp",
+				"./app/assets/chocolate-blanco2.webp",
+				"./app/assets/caja-galletas.webp"
+			]
+		},
+		{
+			"id": 2,
+			"name": "varios cereales",
+			"price": 3.49,
+			"category": "best sellers",
+			"image": [
+				"./app/assets/varios-cereales.webp",
+				"./app/assets/varios-cereales2.webp",
+				"./app/assets/caja-galletas.webp"
+			]
+		},
+		{
+			"id": 3,
+			"name": "copos avena",
+			"price": 3.99,
+			"category": "best sellers",
+			"image": [
+				"./app/assets/copos-avena.webp",
+				"./app/assets/copos-avena2.webp",
+				"./app/assets/caja-galletas.webp"
+			]
+		},
+		{
+			"id": 4,
+			"name": "galletas manteca",
+			"price": 2.79,
+			"category": "best sellers",
+			"image": [
+				"./app/assets/galletas-manteca.webp",
+				"./app/assets/galletas-manteca2.webp",
+				"./app/assets/caja-galletas.webp"
+			]
+		},
+		{
+			"id": 5,
+			"name": "mermelada semillas amapola",
+			"price": 4.29,
+			"category": "best sellers",
+			"image": [
+				"./app/assets/mermelada-semillas-amapola.webp",
+				"./app/assets/mermelada-semillas-amapola2.webp",
+				"./app/assets/caja-galletas.webp"
+			]
+		},
+		{
+			"id": 6,
+			"name": "mermelada",
+			"price": 4.99,
+			"category": "best sellers",
+			"image": [
+				"./app/assets/mermelada.webp",
+				"./app/assets/mermelada2.webp",
+				"./app/assets/caja-galletas.webp"
+			]
+		},
+		{
+			"id": 7,
+			"name": "nueces caramelo",
+			"price": 3.79,
+			"category": "novelty",
+			"image": [
+				"./app/assets/nueces-caramelo.webp",
+				"./app/assets/nueces-caramelo2.webp",
+				"./app/assets/caja-galletas.webp"
+			]
+		},
+		{
+			"id": 8,
+			"name": "nueces pecan",
+			"price": 4.49,
+			"category": "novelty",
+			"image": [
+				"./app/assets/nueces-pecan.webp",
+				"./app/assets/nueces-pecan2.webp",
+				"./app/assets/caja-galletas.webp"
+			]
+		},
+		{
+			"id": 9,
+			"name": "parmesano",
+			"price": 5.29,
+			"category": "novelty",
+			"image": [
+				"./app/assets/parmesano.webp",
+				"./app/assets/parmesano2.webp",
+				"./app/assets/caja-galletas.webp"
+			]
+		},
+		{
+			"id": 10,
+			"name": "rosquillas manteca",
+			"price": 3.99,
+			"category": "novelty",
+			"image": [
+				"./app/assets/rosquillas-manteca.webp",
+				"./app/assets/rosquillas-manteca2.webp",
+				"./app/assets/caja-galletas.webp"
+			]
+		},
+		{
+			"id": 11,
+			"name": "semillas amapolas",
+			"price": 4.79,
+			"category": "novelty",
+			"image": [
+				"./app/assets/semillas-amapolas.webp",
+				"./app/assets/semillas-amapolas2.webp",
+				"./app/assets/caja-galletas.webp"
+			]
+		},
+		{
+			"id": 12,
+			"name": "trocitos chocolate",
+			"price": 5.99,
+			"category": "novelty",
+			"image": [
+				"./app/assets/trocitos-chocolate.webp",
+				"./app/assets/trocitos-chocolate2.webp",
+				"./app/assets/caja-galletas.webp"
+			]
+		}
+	],
+	"cart": []
 }
