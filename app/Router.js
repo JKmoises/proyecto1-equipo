@@ -1,5 +1,6 @@
 import { ajax } from "./helpers/ajaxHelper.js";
 import { Store } from "./pages/Store.js";
+import { AboutMe } from "./pages/AboutMe.js";
 
 export async function Router() {
   const { hash } = location;
@@ -12,7 +13,7 @@ export async function Router() {
     console.log("Tienda");
 
   }else if (hash === "#/sobre-mi") {
-    console.log("Sobre mi");
+    $main.appendChild(AboutMe());
   }else if (hash === "#/contacto") {
     console.log("Contacto");
   }else if (hash === "#/detalle-producto") {
