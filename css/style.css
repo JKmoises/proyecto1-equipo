@@ -1042,7 +1042,7 @@ a {
 }
 .form__section--input--nombre,
 .form__section--input--correo {
-    /* margin: 0 1rem; */
+    
     width: 100%;
     line-height: 47px;
   }
@@ -1111,9 +1111,7 @@ a {
     gap: 1rem;
     
   }
-  .form__div--grid-order-nombre{
-    
-  }
+  
   .form__div--grid-order-correo{
     
     order: 1;
