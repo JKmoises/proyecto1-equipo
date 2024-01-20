@@ -1147,14 +1147,21 @@ a {
 }
 
 
+.animated {
+  transition-property: visibility;
+  transition-duration: 0.5s;
+}
+
 .fadeIn {
   opacity: 1;
-  animation: fadeIn 0.2s linear;
+  animation: fadeIn 0.4s linear 0s;
+  visibility: visible;
 }
 
 .fadeOut  {
   opacity: 0;
-  animation: fadeOut 0.5s linear;
+  animation: fadeOut 0.4s linear 0s;
+  visibility: hidden;
 }
 
 @keyframes fadeIn {
