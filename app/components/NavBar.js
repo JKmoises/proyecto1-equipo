@@ -1,6 +1,6 @@
 export function NavBar(){
   const $navBar = document.createElement("section");
-  $navBar.classList.add("header__nav");
+  $navBar.classList.add("header__nav","animated");
 
   $navBar.innerHTML = /*html*/`
     <div class="header__login">
