@@ -1112,12 +1112,12 @@ a {
     
   }
   .form__div--grid-order-nombre{
-    /* display: flex; */
+    
   }
   .form__div--grid-order-correo{
     
     order: 1;
-    /* display: flex; */
+    
   }
   
   .form__div--grid-order-mensaje{
@@ -1126,28 +1126,12 @@ a {
     grid-auto-rows: 118px;
    
   }
-   /* .form__section--input--mensaje::placeholder{
-
-   } */
+ 
   .form__div--grid-order-enviar{
     order: 1;
     grid-row: -2 / -1;
     grid-column: 2/3;
   }
 
-  .form__section--input--nombre{
-    
-  }
-  .form .form__section--input--correo{
-
-    /* display: grid;
-    order: 3 ; */
-  }
-  .form .form__section--input--mensaje{
-    /* display: grid;
-    order: 2 ; */
-  }
-  .form__section--input--enviar{
-
-  }
+ 
 }
