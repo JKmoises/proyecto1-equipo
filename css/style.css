@@ -1013,7 +1013,6 @@ li {
     font-size: 5.6vw;
     margin: .6rem 1rem;
     font-weight: 300;
-    
 }
 li {
   list-style: none;
@@ -1023,8 +1022,8 @@ a {
   color: inherit;
 }
 .info__lista{
-    
     padding-inline-start: 23px;
+    font-weight: 600;
 }
 .contacto__text{
     margin: 1.5rem;
@@ -1081,39 +1080,53 @@ a {
 .info__title{
     margin: .6rem 1rem;
     padding: .5rem;
+    font-weight: 100;
+    font-size: 4.5vw;
 }
-/* *Lapto */
-.form__section--div--grid >*{
+.form__section--div--grid >{
   margin-bottom: 1rem;
 }
+.map{
+  display: none;
+}
+/* *Lapto */
 @media screen and (min-width: 768px){
-  .info__lista--paddingbottom{
-    padding-bottom:0;
+  .contacto__title{
+    font-size:1.75rem
   }
-  .form__section--input--mensaje{
-    width: 100%;
-    line-height: 4vh;
-    resize: none;
+  .contacto__text{
+    font-size: 1rem;
+    width: 60vw;
+  }
+
+  .info__title{
+    font-size: .8125rem;
   }
   .contacto{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  .contacto__title{
-    font-size:1.6rem ;
-  }
+  .map{
+    display: block;
+    margin: 2rem;
+  } 
+  .map iframe{
+    width: 70vw;
+    height: 40vh;
+  } 
+  
   .form__section--div--grid{
     display: grid;
-    grid-template-columns: repeat(2, 30%);
+    grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(3, 5vh);
     grid-auto-rows: auto;
     width: 81%;
     margin: 0 auto;
-    gap: 1rem;
+    gap: 2rem;
     
   }
-  
   .form__div--grid-order-correo{
-    
     order: 1;
     
   }
@@ -1122,14 +1135,94 @@ a {
     order: 0;
     display: grid;
     grid-auto-rows: 118px;
-   
   }
- 
   .form__div--grid-order-enviar{
     order: 1;
     grid-row: -2 / -1;
     grid-column: 2/3;
   }
+}
 
- 
+/* SECCION DE DETALLES */
+.details-title-size{
+  font-size: 20px;
+  margin-bottom: 10px
+}
+
+.buy-datail-container{
+  margin-bottom: 30px
+}
+.sku {
+  font-weight: bold;
+  margin-bottom: 15px
+}
+.details-cant{
+  font-family: var(--font);
+  padding: 10px;
+  border: 1px solid var(--gray-normal)
+}
+
+.detail__price{
+  color: var(--gray-dark)
+}
+
+.carrito-color-btn{
+  background: var(--pink-dark);
+  color: var(--black-dark);
+}
+
+.carrito-color-btn:hover {
+  background: var(--pink-normal);
+  color: var(--black-light)
+}
+
+.detail-info__subtitle{
+  font-size: 16px;
+  color: var(--black-light);
+  font-weight: 500;
+  margin-bottom: 30px
+}
+
+.hr-details{
+  color: var(--black-dark);
+  font-size: 10px;
+
+}
+.datails-title{
+  padding-bottom: 3rem;
+}
+.span__color{
+  color: var(--gray-dark);
+}
+.details-img{
+  width: 250px;
+  height: 250px;
+  max-width: 250px;
+  max-height: 250px
+}
+.details-img-secondary{
+  width: 42px;
+  height: 42px;
+  max-width: 42px;
+  max-height: 42px;
+}
+@media screen and (min-width: 768px){
+  
+  .details-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: no-wrap
+  }
+  .details-img{
+    width: 500px;
+    height: 500px;
+    max-width: 500px;
+    max-height: 500px
+  }
+  
+  .contenedor-sec-img{
+    display: flex;
+    column-gap: 5px
+  }
+
 }
