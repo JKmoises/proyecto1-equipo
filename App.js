@@ -4,7 +4,7 @@ import { Header } from "./app/components/Header.js";
 import { Main } from "./app/components/Main.js";
 
 export function App(){
-  const $root = document.getElementById("root");
+  const $root = document.getElementById("root"); // <div>
 
   $root.innerHTML = "";
 
@@ -15,4 +15,7 @@ export function App(){
 
   //* Router 
   Router();
+
+
+  //* Funciones de pagina 
 }
