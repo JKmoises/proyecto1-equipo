@@ -1,9 +1,10 @@
 import { Home } from "./pages/Home.js";
 
 export async function Router() {
-  const { hash } = location;
+	const { hash } = location;
 
-  const $main = document.querySelector("#main");
+	const $main = document.querySelector('#main');
+	$main.classList.remove('main');
 
   if (!hash || hash === "#/") {
     console.log("Inicio");
