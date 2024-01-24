@@ -1,7 +1,7 @@
 export function Store(products = []) {
 	const $products = products
 		.map((product) => {
-			return `
+			return /*html*/`
 			<article class='products__card flex-col-center' data-id=${product.id}>
 				<div class="contenedor-img">
 					<p class="card__category">${product.category}</p>

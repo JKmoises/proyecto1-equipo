@@ -18,4 +18,6 @@ export function App(){
 
 
   //* Funciones de pagina 
+  
+  
 }
