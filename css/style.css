@@ -1081,7 +1081,7 @@ a {
   padding-bottom: 3rem;
 }
 .contacto__text{
-  width: 10rem;
+  width: 90%;
 }
 .info__title{
     margin: .6rem 1rem;
@@ -1135,13 +1135,7 @@ a {
     max-width: 63rem;
     overflow: hidden;
     grid-column: span 3;
-}
-  } 
-  .map iframe{
-    width: 70vw;
-    height: 40vh;
-  } 
-  
+  }
   .form__section--div--grid{
     display: grid;
     grid-template-columns: repeat(2, 37%);
@@ -1167,6 +1161,13 @@ a {
     grid-row: -2 / -1;
     grid-column: 2/3;
   }
+
+} 
+  .map iframe{
+    width: 70vw;
+    height: 40vh;
+  } 
+  
 
 
 /* SECCION DE DETALLES */
