@@ -1,7 +1,8 @@
 import { FlavorImage } from "../components/FlavorImage.js";
 import { HeroImage } from "../components/HeroImage.js";
 import { SoldProductCard } from "../components/SoldProductCard.js";
-
+import {SoldSubmitGift} from "../components/StartOtherServices.js";
+ 
 export function Home() {
   const $homeContainer = document.createElement("section");
 
@@ -92,15 +93,18 @@ export function Home() {
   $loadMoreButton.classList.add("flavors-section__load-more");
   $loadMoreButton.textContent = "Cargar más";
 
-
-
+ 
+  
+  
+  
   $flavorsSection.appendChild($flavorsSectionMask);
   $flavorsSection.appendChild($flavorsSectionTitle);
   $flavorsSection.appendChild($flavorsSectionList);
   $flavorsSection.appendChild($loadMoreButton);
-
-
-
+  $flavorsSection.appendChild(SoldSubmitGift())
+  
+  
+  
   $homeContainer.appendChild(HeroImage());
   $homeContainer.appendChild($productSection);
   $homeContainer.appendChild($flavorsSection);
