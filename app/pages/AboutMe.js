@@ -1,8 +1,8 @@
 export function AboutMe() {
   //
 
-  const $about = document.createElement("main")
-  $about.classList.add("container", "about")
+  const $about = document.createElement("section");
+  $about.classList.add("container", "about");
 
   $about.innerHTML = /*html*/ `  
   <img src="./assets/sobre-mi.webp" alt="imagen sombre mi" />
@@ -26,7 +26,7 @@ export function AboutMe() {
       destaque y muestra a tus visitantes quién eres.
     </p>
   </div>
-  `
+  `;
 
-  return $about
+  return $about;
 }

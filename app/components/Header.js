@@ -1,5 +1,4 @@
 import { NavBar } from "./NavBar.js";
-import { toggleMenuNavbar } from "../js/toggleMenuNavbar.js";
 
 export function Header() {
   const $header = document.createElement("header");
@@ -16,7 +15,7 @@ export function Header() {
       Delicias Dafna
     </a>
 
-    <div class="header__hamgurger-icon icon">
+    <div class="header__hamgurger-icon icon" id="hamgurger-icon">
       <i class="bi bi-list"></i>
     </div>
 
@@ -39,8 +38,6 @@ export function Header() {
 
   $header.appendChild($headerMain);
   $header.appendChild(NavBar());
-
-  toggleMenuNavbar($header);
 
   return $header;
 }
