@@ -1,23 +1,30 @@
-import { ajax } from "./helpers/ajaxHelper.js";
-import { Store } from "./pages/Store.js";
+import { Home } from "./pages/Home.js";
 import { AboutMe } from "./pages/AboutMe.js";
 
 export async function Router() {
   const { hash } = location;
 
-  const $main = document.querySelector("#main");
+  const $main = document.querySelector('#main');
+  $main.classList.remove('main');
 
   if (!hash || hash === "#/") {
     console.log("Inicio");
-  }else if (hash === "#/tienda") {
+
+    $main.appendChild(Home())
+  } else if (hash === "#/tienda") {
     console.log("Tienda");
 
-  }else if (hash === "#/sobre-mi") {
+    $main.appendChild(Store());
+  } else if (hash === "#/sobre-mi") {
+
     $main.appendChild(AboutMe());
-  }else if (hash === "#/contacto") {
+
+  } else if (hash === "#/contacto") {
     console.log("Contacto");
-  }else if (hash === "#/detalle-producto") {
+    $main.appendChild(Contact());
+  } else if (hash === "#/detalle-producto") {
     console.log("Detalle Producto");
+    $main.appendChild(ProductDetail());
   } else {
     console.log("Error 404");
   }
