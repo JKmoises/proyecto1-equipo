@@ -1,9 +1,9 @@
 export const SoldSubmitGift = () => {
-let $ServicesElement = document.createElement("section")
-  $ServicesElement.classList.add("shopping-section")
-  $ServicesElement.alt = "Services"
+let $servicesElement = document.createElement("section")
+  $servicesElement.classList.add("shopping-section")
+  $servicesElement.alt = "Services"
 
-  $ServicesElement.innerHTML = /*html*/
+  $servicesElement.innerHTML = /*html*/
   `
   <article class="shopping-section__item flex-col-center">
     <img src="./assets/icono-compras.svg" alt="icono-compras" class="shopping-section__icon">
@@ -38,7 +38,7 @@ let $ServicesElement = document.createElement("section")
   
 
 
-return $ServicesElement
+return $servicesElement
 
 }
 
