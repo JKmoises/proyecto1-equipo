@@ -101,13 +101,13 @@ export function Home() {
   $flavorsSection.appendChild($flavorsSectionTitle);
   $flavorsSection.appendChild($flavorsSectionList);
   $flavorsSection.appendChild($loadMoreButton);
-  $flavorsSection.appendChild(SoldSubmitGift())
   
   
   
   $homeContainer.appendChild(HeroImage());
   $homeContainer.appendChild($productSection);
   $homeContainer.appendChild($flavorsSection);
+  $homeContainer.appendChild(SoldSubmitGift())
 
   return $homeContainer;
 
