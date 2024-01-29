@@ -1,5 +1,5 @@
 export const SoldSubmitGift = () => {
-let $servicesElement = document.createElement("section")
+  const $servicesElement = document.createElement("section")
   $servicesElement.classList.add("shopping-section")
   $servicesElement.alt = "Services"
 

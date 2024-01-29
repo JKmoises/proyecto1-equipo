@@ -1,7 +1,7 @@
 import { FlavorImage } from "../components/FlavorImage.js";
 import { HeroImage } from "../components/HeroImage.js";
 import { SoldProductCard } from "../components/SoldProductCard.js";
-import {SoldSubmitGift} from "../components/StartOtherServices.js";
+import {SoldSubmitGift} from "../components/SoldSubmitGift.js";
  
 export function Home() {
   const $homeContainer = document.createElement("section");
