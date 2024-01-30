@@ -1,4 +1,5 @@
 import { Home } from "./pages/Home.js";
+import { ProductDetail } from "./pages/ProductDetail.js";
 
 export async function Router() {
 	const { hash } = location;
