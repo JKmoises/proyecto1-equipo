@@ -1,4 +1,5 @@
 import { TitlePage } from './components/TitlePage.js';
+import { storeProducts } from './data/storeProducts.js';
 import { ajax } from './helpers/ajaxHelper.js';
 import { Store } from './pages/Store.js';
 
@@ -15,13 +16,7 @@ export async function Router() {
 
 		$main.append(TitlePage('/ elige tus galletas'));
 
-		//Obtener Datos del JSON
-		await ajax({
-			url: 'http://localhost:3000/products',
-			cbSuccess: (products) => {
-				$main.append(Store(products));
-			},
-		});
+		$main.append(Store(storeProducts));
 	} else if (hash === '#/sobre-mi') {
 		console.log('Sobre mi');
 	} else if (hash === '#/contacto') {
