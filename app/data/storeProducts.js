@@ -1,0 +1,134 @@
+export const storeProducts = [
+	{
+		id: 1,
+		name: 'chocolate blanco',
+		price: 4.99,
+		category: 'best sellers',
+		image: [
+			'./app/assets/chocolate-blanco.webp',
+			'./app/assets/chocolate-blanco2.webp',
+			'./app/assets/caja-galletas.webp',
+		],
+	},
+	{
+		id: 2,
+		name: 'varios cereales',
+		price: 3.49,
+		category: 'best sellers',
+		image: [
+			'./app/assets/varios-cereales.webp',
+			'./app/assets/varios-cereales2.webp',
+			'./app/assets/caja-galletas.webp',
+		],
+	},
+	{
+		id: 3,
+		name: 'copos avena',
+		price: 3.99,
+		category: 'best sellers',
+		image: [
+			'./app/assets/copos-avena.webp',
+			'./app/assets/copos-avena2.webp',
+			'./app/assets/caja-galletas.webp',
+		],
+	},
+	{
+		id: 4,
+		name: 'galletas manteca',
+		price: 2.79,
+		category: 'best sellers',
+		image: [
+			'./app/assets/galletas-manteca.webp',
+			'./app/assets/galletas-manteca2.webp',
+			'./app/assets/caja-galletas.webp',
+		],
+	},
+	{
+		id: 5,
+		name: 'mermelada semillas amapola',
+		price: 4.29,
+		category: 'best sellers',
+		image: [
+			'./app/assets/mermelada-semillas-amapola.webp',
+			'./app/assets/mermelada-semillas-amapola2.webp',
+			'./app/assets/caja-galletas.webp',
+		],
+	},
+	{
+		id: 6,
+		name: 'mermelada',
+		price: 4.99,
+		category: 'best sellers',
+		image: [
+			'./app/assets/mermelada.webp',
+			'./app/assets/mermelada2.webp',
+			'./app/assets/caja-galletas.webp',
+		],
+	},
+	{
+		id: 7,
+		name: 'nueces caramelo',
+		price: 3.79,
+		category: 'novelty',
+		image: [
+			'./app/assets/nueces-caramelo.webp',
+			'./app/assets/nueces-caramelo2.webp',
+			'./app/assets/caja-galletas.webp',
+		],
+	},
+	{
+		id: 8,
+		name: 'nueces pecan',
+		price: 4.49,
+		category: 'novelty',
+		image: [
+			'./app/assets/nueces-pecan.webp',
+			'./app/assets/nueces-pecan2.webp',
+			'./app/assets/caja-galletas.webp',
+		],
+	},
+	{
+		id: 9,
+		name: 'parmesano',
+		price: 5.29,
+		category: 'novelty',
+		image: [
+			'./app/assets/parmesano.webp',
+			'./app/assets/parmesano2.webp',
+			'./app/assets/caja-galletas.webp',
+		],
+	},
+	{
+		id: 10,
+		name: 'rosquillas manteca',
+		price: 3.99,
+		category: 'novelty',
+		image: [
+			'./app/assets/rosquillas-manteca.webp',
+			'./app/assets/rosquillas-manteca2.webp',
+			'./app/assets/caja-galletas.webp',
+		],
+	},
+	{
+		id: 11,
+		name: 'semillas amapolas',
+		price: 4.79,
+		category: 'novelty',
+		image: [
+			'./app/assets/semillas-amapolas.webp',
+			'./app/assets/semillas-amapolas2.webp',
+			'./app/assets/caja-galletas.webp',
+		],
+	},
+	{
+		id: 12,
+		name: 'trocitos chocolate',
+		price: 5.99,
+		category: 'novelty',
+		image: [
+			'./app/assets/trocitos-chocolate.webp',
+			'./app/assets/trocitos-chocolate2.webp',
+			'./app/assets/caja-galletas.webp',
+		],
+	},
+];
