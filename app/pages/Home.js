@@ -1,5 +1,6 @@
 import { FlavorImage } from "../components/FlavorImage.js";
 import { HeroImage } from "../components/HeroImage.js";
+import { ModalSlider } from "../components/ModalSlider.js";
 import { SoldProductCard } from "../components/SoldProductCard.js";
 
 export function Home() {
@@ -88,11 +89,14 @@ export function Home() {
     altImage: "sigue-mis-sabores6",
   }));
 
+  const $modal = document.createElement("div");
+  $modal.classList.add("modal-slider");
+  $modal.id = "modal-slider";
+  
   const $loadMoreButton = document.createElement("a");
   $loadMoreButton.classList.add("flavors-section__load-more");
   $loadMoreButton.textContent = "Cargar más";
-
-
+  
 
   $flavorsSection.appendChild($flavorsSectionMask);
   $flavorsSection.appendChild($flavorsSectionTitle);
@@ -100,11 +104,11 @@ export function Home() {
   $flavorsSection.appendChild($loadMoreButton);
 
 
-
   $homeContainer.appendChild(HeroImage());
   $homeContainer.appendChild($productSection);
   $homeContainer.appendChild($flavorsSection);
-
+  $homeContainer.appendChild($modal);
+  
   return $homeContainer;
 
 }

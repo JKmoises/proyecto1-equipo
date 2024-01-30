@@ -2,6 +2,7 @@ import { Router } from "./app/Router.js";
 import { Footer } from "./app/components/Footer.js";
 import { Header } from "./app/components/Header.js";
 import { Main } from "./app/components/Main.js";
+import showModalFlavors from "./app/functions/Home/showModalFlavors.js";
 
 export function App(){
   const $root = document.getElementById("root"); // <div>
@@ -12,12 +13,12 @@ export function App(){
   $root.appendChild(Header());
   $root.appendChild(Main());
   $root.appendChild(Footer());
-
+  
   //* Router 
   Router();
-
-
-  //* Funciones de pagina 
   
+  
+  //* Funciones de pagina 
+  showModalFlavors();
   
 }
