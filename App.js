@@ -2,7 +2,7 @@ import { Router } from "./app/Router.js";
 import { Footer } from "./app/components/Footer.js";
 import { Header } from "./app/components/Header.js";
 import { Main } from "./app/components/Main.js";
-import showModalFlavors from "./app/functions/Home/showModalFlavors.js";
+import showModalFlavors from "./app/functions/home/showModalFlavors.js";
 
 export function App(){
   const $root = document.getElementById("root"); // <div>
