@@ -2,7 +2,7 @@ import { FlavorImage } from "../components/FlavorImage.js";
 import { HeroImage } from "../components/HeroImage.js";
 import { SoldProductCard } from "../components/SoldProductCard.js";
 import {SoldSubmitGift} from "../components/SoldSubmitGift.js";
- 
+
 export function Home() {
   const $homeContainer = document.createElement("section");
 
@@ -48,8 +48,6 @@ export function Home() {
   $productSection.appendChild($productSectionLink);
 
 
-
-
   //* Seccion de sigue mis sabores 
   const $flavorsSection = document.createElement("section");
   $flavorsSection.classList.add("flavors-section", "flex-col-center");
@@ -89,26 +87,27 @@ export function Home() {
     altImage: "sigue-mis-sabores6",
   }));
 
+  const $modal = document.createElement("div");
+  $modal.classList.add("modal-slider");
+  $modal.id = "modal-slider";
+  
   const $loadMoreButton = document.createElement("a");
   $loadMoreButton.classList.add("flavors-section__load-more");
   $loadMoreButton.textContent = "Cargar más";
+  
 
- 
-  
-  
-  
   $flavorsSection.appendChild($flavorsSectionMask);
   $flavorsSection.appendChild($flavorsSectionTitle);
   $flavorsSection.appendChild($flavorsSectionList);
   $flavorsSection.appendChild($loadMoreButton);
-  
-  
-  
+
+
   $homeContainer.appendChild(HeroImage());
   $homeContainer.appendChild($productSection);
   $homeContainer.appendChild($flavorsSection);
   $homeContainer.appendChild(SoldSubmitGift())
-
+  $homeContainer.appendChild($modal);
+  
   return $homeContainer;
 
 }
