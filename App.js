@@ -2,7 +2,7 @@ import { Router } from "./app/Router.js";
 import { Footer } from "./app/components/Footer.js";
 import { Header } from "./app/components/Header.js";
 import { Main } from "./app/components/Main.js";
-import { toggleMenuNavbar } from "./app/functions/toggleMenuNavbar.js";
+import { toggleMenuNavbar } from "./app/functions/components/toggleMenuNavbar.js";
 
 export function App(){
   const $root = document.getElementById("root"); // <div>
