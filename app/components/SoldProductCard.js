@@ -1,5 +1,5 @@
 export function SoldProductCard(props){
-  const { name = "", price = "", image = "" } = props;
+  const { name = "", price = "", image = "", url ="#/detalle-producto" } = props;
 
   const $soldProductCard = document.createElement("article");
   $soldProductCard.classList.add("product-card", "flex-col-center");
@@ -9,7 +9,7 @@ export function SoldProductCard(props){
     <footer class="product-card__footer">
       <h3 class="product-card__title text-uppercase">${name}</h3>
       <p class="product-card__price">${price}</p>
-      <a class="product-card__link" href="#">Ver detalles</a>
+      <a class="product-card__link" href=${url}>Ver detalles</a>
     </footer>
   `
 

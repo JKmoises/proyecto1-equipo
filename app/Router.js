@@ -1,6 +1,7 @@
 import { Home } from "./pages/Home.js";
 import { AboutMe } from "./pages/AboutMe.js";
 import { TitlePage } from "./components/TitlePage.js";
+import { ProductDetail } from "./pages/ProductDetail.js";
 
 export async function Router() {
 	const { hash } = location;
