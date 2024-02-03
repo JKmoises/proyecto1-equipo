@@ -1,7 +1,7 @@
 import { FlavorImage } from "../components/FlavorImage.js";
 import { HeroImage } from "../components/HeroImage.js";
 import { SoldProductCard } from "../components/SoldProductCard.js";
-import {SoldSubmitGift} from "../components/SoldSubmitGift.js";
+import { SoldSubmitGift } from "../components/SoldSubmitGift.js";
 
 export function Home() {
   const $homeContainer = document.createElement("section");
@@ -9,14 +9,14 @@ export function Home() {
   //* Seccion de productos mas vendidos 
   const $productSection = document.createElement("section");
   $productSection.classList.add("product-section", "flex-col-center");
-  
+
   const $productSectionTitle = document.createElement("h2");
   $productSectionTitle.classList.add("product-section__title", "text-uppercase");
   $productSectionTitle.textContent = "/ más vendidas";
 
   const $productSectionContent = document.createElement("div");
   $productSectionContent.classList.add("product-section__content");
-  
+
   $productSectionContent.appendChild(SoldProductCard({
     name: "chocolate blanco",
     price: "$1,00",
@@ -27,7 +27,7 @@ export function Home() {
     name: "copos avena",
     price: "$2,00",
     image: "./assets/copos-avena.webp"
-    
+
   }));
   $productSectionContent.appendChild(SoldProductCard({
     name: "mermelada semillas amapola",
@@ -90,11 +90,11 @@ export function Home() {
   const $modal = document.createElement("div");
   $modal.classList.add("modal-slider");
   $modal.id = "modal-slider";
-  
+
   const $loadMoreButton = document.createElement("a");
   $loadMoreButton.classList.add("flavors-section__load-more");
   $loadMoreButton.textContent = "Cargar más";
-  
+
 
   $flavorsSection.appendChild($flavorsSectionMask);
   $flavorsSection.appendChild($flavorsSectionTitle);
@@ -107,7 +107,7 @@ export function Home() {
   $homeContainer.appendChild($flavorsSection);
   $homeContainer.appendChild(SoldSubmitGift())
   $homeContainer.appendChild($modal);
-  
+
   return $homeContainer;
 
 }

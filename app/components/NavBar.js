@@ -1,6 +1,7 @@
-export function NavBar(){
+export function NavBar() {
   const $navBar = document.createElement("section");
-  $navBar.classList.add("header__nav");
+  $navBar.classList.add("header__nav", "animated");
+  $navBar.setAttribute('id', 'header-nav');
 
   $navBar.innerHTML = /*html*/`
     <div class="header__login">
@@ -11,7 +12,7 @@ export function NavBar(){
       <p>Login</p>
     </div>
 
-    <div class="header__close-icon icon">
+    <div class="header__close-icon icon" id="close-icon">
       <i class="bi bi-x-lg"></i>
     </div>
 
