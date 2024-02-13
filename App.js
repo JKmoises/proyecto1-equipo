@@ -22,5 +22,4 @@ export function App() {
   //* Funciones de pagina 
   toggleMenuNavbar();
   showModalFlavors();
-
 }

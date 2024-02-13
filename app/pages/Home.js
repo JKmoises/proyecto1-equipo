@@ -1,5 +1,6 @@
 import { FlavorImage } from "../components/FlavorImage.js";
 import { HeroImage } from "../components/HeroImage.js";
+import { ModalSlider } from "../components/ModalSlider.js";
 import { SoldProductCard } from "../components/SoldProductCard.js";
 import { SoldSubmitGift } from "../components/SoldSubmitGift.js";
 
