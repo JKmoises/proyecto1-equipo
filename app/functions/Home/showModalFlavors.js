@@ -50,7 +50,7 @@ export const showModalFlavors = async () => {
 
   })
   
-  $modalSlider.addEventListener("click", ({target}) => {
+  $modalSlider?.addEventListener("click", ({target}) => {
     if (target.className.match(/modal-closed/)) {
       const $arrow = document.querySelectorAll(".arrow");
       const $slider = document.querySelector(".slider");
