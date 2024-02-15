@@ -37,7 +37,6 @@
 			"id": 4,
 			"name": "galletas manteca",
 			"price": 2.79,
-			"category": "best sellers",
 			"image": [
 				"./app/assets/galletas-manteca.webp",
 				"./app/assets/galletas-manteca2.webp",
@@ -48,7 +47,6 @@
 			"id": 5,
 			"name": "mermelada semillas amapola",
 			"price": 4.29,
-			"category": "best sellers",
 			"image": [
 				"./app/assets/mermelada-semillas-amapola.webp",
 				"./app/assets/mermelada-semillas-amapola2.webp",
@@ -59,7 +57,6 @@
 			"id": 6,
 			"name": "mermelada",
 			"price": 4.99,
-			"category": "best sellers",
 			"image": [
 				"./app/assets/mermelada.webp",
 				"./app/assets/mermelada2.webp",
