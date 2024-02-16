@@ -2,9 +2,10 @@ import { Home } from "./pages/Home.js";
 import { AboutMe } from "./pages/AboutMe.js";
 import { TitlePage } from "./components/TitlePage.js";
 import { ProductDetail } from "./pages/ProductDetail.js";
+import { Contact } from "./pages/Contact.js";
 
 export async function Router() {
-	const { hash } = location;
+  const { hash } = location;
 
   const $main = document.querySelector('#main');
   $main.classList.remove('main');
@@ -25,6 +26,7 @@ export async function Router() {
   } else if (hash === "#/contacto") {
     console.log("Contacto");
     $main.appendChild(Contact());
+
   } else if (hash === "#/detalle-producto") {
     console.log("Detalle Producto");
     $main.appendChild(ProductDetail());
