@@ -20,19 +20,19 @@ export function Home() {
   $productSectionContent.appendChild(SoldProductCard({
     name: "chocolate blanco",
     price: "$1,00",
-    image: "./assets/chocolate-blanco.webp"
+    image: "./app/assets/chocolate-blanco.webp"
   }));
 
   $productSectionContent.appendChild(SoldProductCard({
     name: "copos avena",
     price: "$2,00",
-    image: "./assets/copos-avena.webp"
+    image: "./app/assets/copos-avena.webp"
 
   }));
   $productSectionContent.appendChild(SoldProductCard({
     name: "mermelada semillas amapola",
     price: "$1,00",
-    image: "./assets/mermelada-semillas-amapola.webp"
+    image: "./app/assets/mermelada-semillas-amapola.webp"
   }));
 
   const $productSectionLink = document.createElement("div");
@@ -63,27 +63,27 @@ export function Home() {
   const $flavorsSectionList = document.createElement("ul");
   $flavorsSectionList.classList.add("flavors-section__list");
   $flavorsSectionList.appendChild(FlavorImage({
-    pathImage: "./assets/sigue-mis-sabores1.jpg",
+    pathImage: "./app/assets/sigue-mis-sabores1.jpg",
     altImage: "sigue-mis-sabores1",
   }));
   $flavorsSectionList.appendChild(FlavorImage({
-    pathImage: "./assets/sigue-mis-sabores2.jpg",
+    pathImage: "./app/assets/sigue-mis-sabores2.jpg",
     altImage: "sigue-mis-sabores2",
   }));
   $flavorsSectionList.appendChild(FlavorImage({
-    pathImage: "./assets/sigue-mis-sabores3.jpg",
+    pathImage: "./app/assets/sigue-mis-sabores3.jpg",
     altImage: "sigue-mis-sabores3",
   }));
   $flavorsSectionList.appendChild(FlavorImage({
-    pathImage: "./assets/sigue-mis-sabores4.jpg",
+    pathImage: "./app/assets/sigue-mis-sabores4.jpg",
     altImage: "sigue-mis-sabores4",
   }));
   $flavorsSectionList.appendChild(FlavorImage({
-    pathImage: "./assets/sigue-mis-sabores5.jpg",
+    pathImage: "./app/assets/sigue-mis-sabores5.jpg",
     altImage: "sigue-mis-sabores5",
   }));
   $flavorsSectionList.appendChild(FlavorImage({
-    pathImage: "./assets/sigue-mis-sabores6.jpg",
+    pathImage: "./app/assets/sigue-mis-sabores6.jpg",
     altImage: "sigue-mis-sabores6",
   }));
 

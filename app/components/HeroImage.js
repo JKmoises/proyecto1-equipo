@@ -5,15 +5,15 @@ export function HeroImage(){
     <section class="hero">
       <ul class="hero__sliders">
         <li class="hero__slider">
-          <img class="hero__image" src="./assets/hero-image.webp" alt="hero-image">
+          <img class="hero__image" src="./app/assets/hero-image.webp" alt="hero-image">
         </li>
 
         <li class="hero__slider">
-          <img class="hero__image" src="./assets/hero-image2.webp" alt="hero-image2">
+          <img class="hero__image" src="./app/assets/hero-image2.webp" alt="hero-image2">
         </li>
 
         <li class="hero__slider">
-          <img class="hero__image" src="./assets/hero-image3.webp" alt="hero-image3">
+          <img class="hero__image" src="./app/assets/hero-image3.webp" alt="hero-image3">
         </li>
       </ul>
       <article class="hero__content">

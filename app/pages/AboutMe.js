@@ -4,7 +4,7 @@ export function AboutMe() {
   $about.classList.add("container", "about");
 
   $about.innerHTML = /*html*/ `  
-  <img src="./assets/sobre-mi.webp" alt="imagen sombre mi" />
+  <img src="./app/assets/sobre-mi.webp" alt="imagen sombre mi" />
 
   <h1 class="title text-uppercase">/ sobre mi</h1>
   <div class="container__about__text">
