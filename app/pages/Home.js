@@ -87,6 +87,30 @@ export function Home() {
     altImage: "sigue-mis-sabores6",
   }));
 
+
+  document.addEventListener("click", e => {
+
+    if(e.target.matches(".flavors-section__load-more")){
+      $flavorsSectionList.appendChild(FlavorImage({
+        pathImage: "./assets/sigue-mis-sabores7.jpg",
+        altImage: "sigue-mis-sabores7",
+      }));
+    
+      $flavorsSectionList.appendChild(FlavorImage({
+        pathImage: "./assets/sigue-mis-sabores8.jpg",
+        altImage: "sigue-mis-sabores8",
+      }));
+      $flavorsSectionList.appendChild(FlavorImage({
+        pathImage: "./assets/sigue-mis-sabores9.jpg",
+        altImage: "sigue-mis-sabores9",
+      }));
+      
+      document.querySelector(".flavors-section__load-more").classList.add("none")
+      
+    }
+    
+  })
+
   const $modal = document.createElement("div");
   $modal.classList.add("modal-slider");
   $modal.id = "modal-slider";

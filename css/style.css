@@ -835,10 +835,14 @@ li {
   color: black;
   transition: background-color 0.5s ease;
 }
+.flavors-section__load-more.none {
+  display: none;
+}
 
 .flavors-section__load-more:hover {
   border-color: var(--gray-dark);
   color: var(--gray-dark);
+  cursor: pointer;
 }
 /* modal */
 .modal-slider {
