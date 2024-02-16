@@ -3,10 +3,9 @@ export const SoldSubmitGift = () => {
   $servicesElement.classList.add("shopping-section")
   $servicesElement.alt = "Services"
 
-  $servicesElement.innerHTML = /*html*/
-  `
+  $servicesElement.innerHTML = /*html*/`
   <article class="shopping-section__item flex-col-center">
-    <img src="./assets/icono-compras.svg" alt="icono-compras" class="shopping-section__icon">
+    <img src="./app/assets/icono-compras.svg" alt="icono-compras" class="shopping-section__icon">
     <h3 class="shopping-section__title text-uppercase">
       comprar y recoger
     </h3>
@@ -16,7 +15,7 @@ export const SoldSubmitGift = () => {
   </article>
   
   <article class="shopping-section__item flex-col-center">
-    <img src="./assets/icono-envio.svg" alt="icono-envio" class="shopping-section__icon">
+    <img src="./app/assets/icono-envio.svg" alt="icono-envio" class="shopping-section__icon">
     <h3 class="shopping-section__title text-uppercase">
       envio gratis
     </h3>
@@ -26,7 +25,7 @@ export const SoldSubmitGift = () => {
   </article>
   
   <article class="shopping-section__item flex-col-center">
-    <img src="./assets/icono-envolturas.svg" alt="icono-envolturas" class="shopping-section__icon">
+    <img src="./app/assets/icono-envolturas.svg" alt="icono-envolturas" class="shopping-section__icon">
     <h3 class="shopping-section__title text-uppercase">
       envolturas para regalo
     </h3>
