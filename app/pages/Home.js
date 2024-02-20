@@ -2,9 +2,23 @@ import { FlavorImage } from "../components/FlavorImage.js";
 import { HeroImage } from "../components/HeroImage.js";
 import { SoldProductCard } from "../components/SoldProductCard.js";
 import { SoldSubmitGift } from "../components/SoldSubmitGift.js";
+import { ajax } from "../helpers/ajaxHelper.js";
 
 export function Home() {
   const $homeContainer = document.createElement("section");
+
+  /** ****************************** MÉTODO ALTERNATIVO ***************************** */
+  // const getProducts = () => {
+  //   return ajax2({
+  //     url: 'http://localhost:3000/products',
+  //     cbSuccess: (data) => {
+  //       return data
+  //         .filter(product => product.category === 'best sellers')
+  //         .slice(0, 3);
+  //     }
+  //   });
+  // }
+  /** ******************************************************************************* */
 
   //* Seccion de productos mas vendidos 
   const $productSection = document.createElement("section");
@@ -17,23 +31,60 @@ export function Home() {
   const $productSectionContent = document.createElement("div");
   $productSectionContent.classList.add("product-section__content");
 
-  $productSectionContent.appendChild(SoldProductCard({
-    name: "chocolate blanco",
-    price: "$1,00",
-    image: "./assets/chocolate-blanco.webp"
-  }));
 
-  $productSectionContent.appendChild(SoldProductCard({
-    name: "copos avena",
-    price: "$2,00",
-    image: "./assets/copos-avena.webp"
+  /** ******************************* MÉTODO ORIGINAL ******************************* */
+  ajax({
+    url: 'http://localhost:3000/products',
+    cbSuccess: (data) => {
+      const products = data
+        .filter(product => product.category === 'best sellers')
+        .slice(0, 3);
 
-  }));
-  $productSectionContent.appendChild(SoldProductCard({
-    name: "mermelada semillas amapola",
-    price: "$1,00",
-    image: "./assets/mermelada-semillas-amapola.webp"
-  }));
+      products.map(product => {
+
+        $productSectionContent.appendChild(SoldProductCard({
+          name: product.name,
+          price: `$${product.price}`,
+          image: product.image[0]
+        }));
+
+      });
+
+    }
+  });
+  /** ******************************************************************************* */
+
+  /** ****************************** MÉTODO ALTERNATIVO ***************************** */
+  // getProducts().then(products => {
+
+  //   products.map(product => {
+
+  //     $productSectionContent.appendChild(SoldProductCard({
+  //       name: product.name,
+  //       price: `$${product.price}`,
+  //       image: product.image[0],
+  //       url: "#/detalle-producto"
+  //     }));
+
+  //   });
+
+  // }).catch(error => {
+
+  //   console.error(error);
+
+  //   const $errorSection = document.createElement("div");
+
+  //   $errorSection.innerHTML = /*html*/ ` 
+  //   <div class="error text-white text-xl">
+  //   <p>Error ${error.status}: ${error.message}</p>
+  //   </div>
+  //   `;
+
+  //   $productSectionContent.appendChild($errorSection);
+
+  // });
+  /** ******************************************************************************* */
+
 
   const $productSectionLink = document.createElement("div");
   $productSectionLink.classList.add("product-section__link");
